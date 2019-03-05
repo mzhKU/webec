@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>Storybook for the Web Engineering Module</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="./style-webec.css" rel="stylesheet" type="text/css">
     <style>
+        thead {
+            text-align: left;
+        }
+
         body {
             font-family: 'Open Sans', sans-serif;
         }
@@ -13,7 +18,7 @@
             font-weight: bold;
         }
         
-        tr.ex + tr + tr {
+        tbody tr.ex + tr + tr {
             color: red;
         } 
         tr.ex ~ tr {
@@ -40,12 +45,12 @@
                 <thead><tr><th>Date</th><th>#</th><th>Topic</th></tr></thead>
                 <tbody>
                     <tr><td>Di 19.02.19</td><td>12:15 - 15:00</td> <td>HTML</td> </tr>
-                    <tr><td>Di, 26.02.19</td><td>12:15 - 15:00</td><td>CSS	</td></tr>
+                    <tr><td>Di, 26.02.19</td><td>12:15 - 15:00</td><td>CSS</td></tr>
                     <tr><td>Di, 05.03.19</td><td>12:15 - 15:00</td><td>Grails, Web, MVC	</td></tr>
-                    <tr><td>Di, 12.03.19</td><td>12:15 - 15:00</td><td>GSP, Template, Taglib, Layout		</td></tr>
-                    <tr><td>Di, 19.03.19</td><td>12:15 - 15:00</td><td>Consolidation training, Testing	</td></tr>
-                    <tr><td>Di, 26.03.19</td><td>12:15 - 15:00</td><td>Persistence, DB-Access (GORM)		</td></tr>
-                    <tr><td>Di, 02.04.19</td><td>12:15 - 15:00</td><td>REST, Services	                          	</td></tr>
+                    <tr><td>Di, 12.03.19</td><td>12:15 - 15:00</td><td>GSP, Template, Taglib, Layout</td></tr>
+                    <tr><td>Di, 19.03.19</td><td>12:15 - 15:00</td><td>Consolidation training, Testing</td></tr>
+                    <tr><td>Di, 26.03.19</td><td>12:15 - 15:00</td><td>Persistence, DB-Access (GORM)</td></tr>
+                    <tr><td>Di, 02.04.19</td><td>12:15 - 15:00</td><td>REST, Services</td></tr>
                     <tr><td>Di, 09.04.19</td><td>12:15 - 15:00</td><td>Role-based Security	                      	</td></tr>
                     <tr class="ex"><td>Di, 16.04.19</td><td>12:15 - 15:00</td><td>Übungsvorbereitung ** Anwesenheitspflicht **	</td></tr>
                     <tr><td>Di, 30.04.19</td><td>12:15 - 15:00</td><td>Übungsanlass </td></tr>
@@ -58,26 +63,35 @@
                 <tfoot><tr><td colspan="3"> MSP date to be announced</td> </tr></tfoot>
             </table>
         </article>
-        <article>
-            <h2> Total Effort</h2>
-            <p> Classroom lectures add up to <code>15 * 3h = 45h</code>.</p>
-            <p> Prework and afterwork, including homework adds up to <code>15 * 1h = 15h</code>.</p>
-            <p> The exercise for the continuous assessment grade takes <code>4 * 5h = 20h</code>.</p>
-            <p> Preparation for the final exam will take approximately <code>8h</code>.</p>
-            <p> Writing the final exam takes <code>2h</code>.</p>
-            <p> This makes a total of <code>90h</code>.</p>
-        </article>
-        <article id="criteria">
-            <h2> Passing criteria </h2>
-            <ul>
-                <li>You have to attend the exercise preparation event.</li>
-                <li>You have to do the exercise and deliver before the deadline.</li>
-                <li>You have to attend the <dfn title="Modulschlussprüfung">final exam (MSP)</dfn>.</li>
-            </ul>
-            <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>. </p>
-            <p> EN and MSP together make your final grade. </p>
 
-        </article>
+        <article>
+            <div class="header clearfix" style="border: 1px solid black;">
+                <div class="headers">Header One</div>
+                <div class="headers">Header Two</div>
+                <div class="headers">Header Three</div> 
+                <div class="headers">Header Four</div> 
+            </div>
+       </article> 
+       <article>
+           <h2> Total Effort</h2>
+           <p> Classroom lectures add up to <code>15 * 3h = 45h</code>.</p>
+           <p> Prework and afterwork, including homework adds up to <code>15 * 1h = 15h</code>.</p>
+           <p> The exercise for the continuous assessment grade takes <code>4 * 5h = 20h</code>.</p>
+           <p> Preparation for the final exam will take approximately <code>8h</code>.</p>
+           <p> Writing the final exam takes <code>2h</code>.</p>
+           <p> This makes a total of <code>90h</code>.</p>
+       </article>
+       <article id="criteria">
+           <h2> Passing criteria </h2>
+           <ul>
+               <li>You have to attend the exercise preparation event.</li>
+               <li>You have to do the exercise and deliver before the deadline.</li>
+               <li>You have to attend the <dfn title="Modulschlussprüfung">final exam (MSP)</dfn>.</li>
+           </ul>
+           <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>. </p>
+           <p> EN and MSP together make your final grade. </p>
+
+       </article>
     </section>
 </main>
 <footer>
