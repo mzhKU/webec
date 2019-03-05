@@ -1,0 +1,26 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+    overflow: auto;
+}
+
+.container {
+    border: 1px solid blue;
+}
+
+.box {
+    border: 1px solid black;
+    height: 60px;
+    width:  60px;
+}
+
+.one {
+    margin: 0 auto;
+}
+
+.two {
+    margin: 0 auto;
+}
+
